@@ -1,0 +1,12 @@
+export default ({
+  COLLINEAR: 0,
+  CLOCKWISE: 1,
+  COUNTERCLOCKWISE: -1,
+  LEFT: -1,
+  CENTER: 0,
+  RIGHT: 1,
+  CAP_BUTT: 1,
+  CAP_PROJECTED: 2,
+  JOIN_MITER: 1,
+  JOIN_BEVEL: 2,
+});

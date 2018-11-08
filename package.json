@@ -1,0 +1,51 @@
+{
+  "private": false,
+  "name": "math-utils-2d",
+  "version": "0.0.1",
+  "description": "Math utils for 2d graphics",
+  "repository": "https://github.com/kjerandp/math-utils-2d",
+  "author": "Kjerand Pedersen",
+  "license": "MIT",
+  "keywords": [
+    "2d",
+    "vector",
+    "polygon",
+    "math"
+  ],
+  "main": "dist/math-utils-2d.cjs.js",
+  "module": "dist/math-utils-2d.esm.js",
+  "browser": "dist/math-utils-2d.js",
+  "devDependencies": {
+    "babel-cli": "^6.8.0",
+    "babel-core": "^6.8.0",
+    "babel-eslint": "^8.2.2",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.8.0",
+    "chai": "^4.1.2",
+    "eslint": "^4.18.2",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "mathjs": "^4.0.0",
+    "mocha": "^5.0.4",
+    "rollup": "^0.56.5",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.2.0",
+    "sinon": "^4.4.2"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "NODE_ENV=test mocha --require babel-register",
+    "test:watch": "NODE_ENV=test mocha --require babel-register --reporter min --watch",
+    "lint": "eslint src test tools",
+    "prepub": "npm run build",
+    "pub": "npm publish"
+  },
+  "files": [
+    "dist"
+  ]
+}
