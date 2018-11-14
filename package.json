@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "math-utils-2d",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "Math utils for 2d graphics",
   "repository": "https://github.com/kjerandp/math-utils-2d",
   "author": "Kjerand Pedersen",
