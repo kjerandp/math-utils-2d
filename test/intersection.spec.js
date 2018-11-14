@@ -11,5 +11,10 @@ describe('fast intersection tests', () => {
 
   it('should intersect', () => {
     expect(pol1.fastTest(pol2)).to.equal(true);
+    const intersects = pol1.test(pol2);
+    expect(intersects).to.not.equal(false);
+    expect(intersects.length).to.equal(1);
+    expect(intersects[0]).to.be.instanceOf(Polygon);
+    expect(intersects[0].vertices.length).to.equal(9);
   });
 });

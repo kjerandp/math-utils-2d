@@ -1,10 +1,9 @@
-import Vector from '../geometric-entities/vector';
 import Point from '../geometric-entities/point';
+import Polygon from '../geometric-entities/polygon';
 import * as segmentTests from '../intersection/line-segment-tests';
 import * as circleTests from '../intersection/circle-tests';
 
 export function fastTest(a, b, skipBBoxTest = false) {
-  console.log(a, b);
   if (!skipBBoxTest && !a.boundingBox().test(b.boundingBox())) {
     return false;
   }
