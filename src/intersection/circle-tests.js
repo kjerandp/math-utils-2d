@@ -2,6 +2,7 @@ import Vector from '../geometric-entities/vector';
 import Point from '../geometric-entities/point';
 import LineSegment from '../geometric-entities/line-segment';
 import Polynomials from '../math/polynomials';
+import { approxZero } from '../common/utils';
 
 export function fastTest(a, b) {
   const v = new Vector(a.center, b.center);

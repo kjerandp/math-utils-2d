@@ -8,6 +8,7 @@ import Ellipse from './geometric-entities/ellipse';
 import Circle from './geometric-entities/circle';
 import Polygon from './geometric-entities/polygon';
 import Types from './common/types';
+
 import './extensions';
 import './intersection';
 

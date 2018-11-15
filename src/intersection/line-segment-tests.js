@@ -1,5 +1,6 @@
 import Vector from '../geometric-entities/vector';
 import Point from '../geometric-entities/point';
+import Line from '../geometric-entities/line';
 import LineSegment from '../geometric-entities/line-segment';
 import * as lineTests from './line-tests';
 
@@ -17,8 +18,8 @@ export function fastTest(segA, segB) {
 export function fastTestSets(setA, setB) {
   for (let i = 0; i < setA.length; i++) {
     for (let j = 0; j < setB.length; j++) {
-      const test = fastTest(setA[i], setB[j]);
-      if (test) {
+      const ftest = fastTest(setA[i], setB[j]);
+      if (ftest) {
         return true;
       }
     }

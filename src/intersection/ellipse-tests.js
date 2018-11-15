@@ -1,7 +1,10 @@
 import Line from '../geometric-entities/line';
+import LineSegment from '../geometric-entities/line-segment';
 import Point from '../geometric-entities/point';
 import * as circleTests from './circle-tests';
 import * as polygonTests from './polygon-tests';
+import Polynomials from '../math/polynomials';
+import { approxZero } from '../common/utils';
 
 export function fastTest(a, b, depth = 3) {
   if (a.boundingBox().test(b.boundingBox())) {

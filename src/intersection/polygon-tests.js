@@ -1,5 +1,6 @@
 import Point from '../geometric-entities/point';
 import Polygon from '../geometric-entities/polygon';
+import LineSegment from '../geometric-entities/line-segment';
 import * as segmentTests from '../intersection/line-segment-tests';
 import * as circleTests from '../intersection/circle-tests';
 
