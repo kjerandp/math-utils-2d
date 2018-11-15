@@ -8,9 +8,20 @@ import Ellipse from './geometric-entities/ellipse';
 import Circle from './geometric-entities/circle';
 import Polygon from './geometric-entities/polygon';
 import Types from './common/types';
-
+import {
+  approxTo,
+  approxZero,
+  cycleIterator,
+  cycle,
+  intersect,
+  union,
+  except,
+  isNumeric,
+  isPointLike,
+} from './common/utils';
 import './extensions';
 import './intersection';
+
 
 export default {
   Point,
@@ -23,4 +34,15 @@ export default {
   Circle,
   Polygon,
   Types,
+  approxTo,
+  approxZero,
+  cycleIterator,
+  isNumeric,
+  isPointLike,
+  array: {
+    cycle,
+    intersect,
+    union,
+    except,
+  },
 };

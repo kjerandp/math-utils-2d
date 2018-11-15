@@ -3,7 +3,8 @@ import Vector from './vector';
 import Angle from './angle';
 import LineSegment from './line-segment';
 import { cycleIterator, cycle, approxZero } from '../common/utils';
-import { Cache, Types } from '../common';
+import Types from '../common/types';
+import Cache from '../common/cache';
 import BoundingBox from '../intersection/bounding-box-tests';
 
 export default class Polygon {
