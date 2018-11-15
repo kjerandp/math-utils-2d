@@ -349,7 +349,7 @@ export default class Polygon {
     if (this.vertices.length < 4) return Object.assign({}, this);
 
     if (this.cache) {
-      const triangles = this.cache.get('triangels');
+      const triangles = this.cache.get('triangles');
       if (triangles) return triangles;
     }
 
