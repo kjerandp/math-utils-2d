@@ -28,7 +28,7 @@ Circle.prototype.escribe = function escribe(depth = 3) {
   let angle = step;
   let pp = this.center.translate(this.radius, 0);
   let pt = new Vector(0, 1);
-  while (angle <= Angle.TAU) {
+  while (angle < Angle.TAU + step) {
     const cp = this.pointAtAngle(angle);
     const t = new Vector(this.center, cp).orthogonal(true);
 
